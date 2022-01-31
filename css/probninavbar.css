@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px white;
+    border-bottom: 90%;
+    font-family: 'Poppins';
+    background-color: #101010;
+
+}
+.logo a{
+    color: white;
+}
+
+header .inner{
+    width: 80%; 
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+    
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: white;
+}
+
+header nav .button{
+    background-color: #1ab26b; 
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+
+@media screen and (max-width:800px){
+
+    header{
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        border-bottom: solid 1px white;
+        border-bottom: 90%;
+        font-family: 'Poppins';
+        background-color: #101010;
+    text-align: center;
+    }
+    .logo a{
+        color: white;
+    }
+    
+    header .inner{
+        width: 100%; 
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    header .logo{
+        display: unset;
+        height: unset;
+        float: unset;
+        
+    }
+    
+    header .logo div{
+        height: unset;
+        display: unset;
+        vertical-align: middle;
+    }
+    
+    
+    
+    header nav{
+        float: unset;
+        height: unset;
+    }
+    .homepage {
+        padding: 5px;
+        /* border: 1px white solid;
+        border-radius: 12px; */
+       
+    }
+    
+    header nav li{
+        display:block;
+        height: unset;
+        float: unset;
+        margin-right: unset;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    
+    header nav li:last-of-type{
+        margin-right: 0;
+    }
+    
+    header nav span {
+        display: unset;
+        vertical-align: middle;
+    }
+    
+    header nav a{
+        color: white;
+        padding: 3px 3px 3px 3px;
+       
+        /* border:1px white solid;
+        border-radius: 12px; */
+       
+    }
+    
+    header nav .button{
+        background-color: unset; 
+        color: #FFF;
+        padding:3px 3px 3px 3px;
+        
+    }
+    
+    header nav .button:hover{
+        filter: brightness(1.05);
+    }
+}
+

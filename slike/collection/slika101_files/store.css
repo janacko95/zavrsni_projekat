@@ -1,0 +1,92 @@
+/* new campaign */
+.menu-item--accessible,
+.layout-categories-category--accessible {
+	display: none;
+}
+
+.marketing-fashion-content-page .theme--dark {
+	--color-main-000: #fff;
+	--color-main-005: #f2f2f2;
+	--color-main-010: #e5e5e5;
+	--color-main-020: #ccc;
+	--color-main-040: #999;
+	--color-main-060: #666;
+	--color-main-080: #333;
+	--color-main: #000;
+	--color-recommendation: #d4e5f7;
+}
+
+.marketing-fashion-content-page .theme--dark .layout__sidebar-content {
+	background: var(--color-main-000);
+}
+
+/* hide carousel product info for beauty in desktop */
+@media screen and (min-width: 1024px) {
+	html[id*="BEAUTY"] .product-grid-block-carousel__product-info {
+		display: none;
+	}
+
+	html[id*="BEAUTY"] .product-grid-block-carousel__primary-product {
+		width: calc(var(--grid-column-width) * 4 + var(--grid-column-gutter) * 3);
+	}
+
+	html[id*="BEAUTY"] .product-grid-block-carousel__primary-product.product-grid-product--double {
+		margin-left: calc(var(--grid-column-width) * 2 + var(--grid-column-gutter) * 2);
+		width: calc(var(--grid-column-width) * 8 + var(--grid-column-gutter) * 7);
+	}
+}
+
+li[id*="zara-origins"] .media-video__audio-toggle-icon {
+	filter: invert(1)
+}
+
+.home-page.theme--origins .layout-header__main {
+	height: 60px;
+}
+
+.home-page.theme--origins .layout-header-link {
+	color: inherit;
+}
+
+.theme--athleticz .product-grid-product.product-grid-product--extra-image {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.media-3d-advanded__viewer-overlay-close-icon {
+		fill: #000;
+	}
+
+	.media-3d-advanded__viewer-overlay-message {
+		color: #000;
+		fill: #000;
+	}	
+}
+
+.media-spin-360__rotate-icon {
+	fill: #fff;
+}
+
+.theme--athleticz .product-detail-color-selector__color-marker:not(.product-detail-color-selector__color-marker--is-selected) .product-detail-color-selector__color-area {
+	box-shadow: 0 0 0 1px var(--color-main-060);
+}
+
+/* beauty experiment */
+li[data-categoryid="1929821"] {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.product-grid-block-carousel__secondary-products--multiproduct .price__future-discount-percentage {
+		display: inline;
+	}
+}
+
+html[data-store="cn"] .layout-footer__stores .layout-footer__item {
+	display: none;
+}
+
+.layout-header-links__desktop-link {
+	white-space: nowrap;
+}

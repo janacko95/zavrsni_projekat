@@ -1,0 +1,175 @@
+.nav-row__carousel {
+	font-size: var(--font-size-heading-s);
+	line-height: var(--line-height-heading-s);
+	letter-spacing: var(--letter-spacing-heading-s);
+	text-transform: uppercase;
+	font-stretch: var(--font-stretch-condensed);
+	font-weight: var(--font-weight-light);
+}
+
+.nav-row__item {
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.nav-row__item--active {
+	font-size: var(--font-size-heading-s-highlight);
+	line-height: var(--line-height-heading-s-highlight);
+	letter-spacing: var(--letter-spacing-heading-s-highlight);
+	text-transform: uppercase;
+	font-stretch: var(--font-stretch-condensed);
+	font-weight: var(--font-weight-condensed);
+}
+
+/* stylelint-disable-next-line selector-max-type */
+.nav-row__item--active svg {
+	stroke: var(--color-main);
+	stroke-width: 2px;
+}
+
+[dir=ltr] .nav-row__carousel .variable-width-carousel__item {
+	margin-right: var(--spacing-06);
+}
+
+[dir=rtl] .nav-row__carousel .variable-width-carousel__item {
+	margin-left: var(--spacing-06);
+}
+
+/* stylelint-disable-next-line selector-max-type */
+.nav-row__carousel svg {
+	height: 1em;
+}
+
+.category-topbar {
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
+	font-size: var(--font-size-body-l-highlight);
+	justify-content: flex-start;
+	overflow-y: hidden;
+	position: relative;
+	text-transform: uppercase;
+	width: 100%;
+	line-height: var(--line-height-body-l-highlight);
+	letter-spacing: var(--letter-spacing-body-l-highlight);
+	font-stretch: var(--font-stretch-condensed);
+	font-weight: var(--font-weight-condensed);
+}[dir] .category-topbar {
+	margin-bottom: var(--spacing-02);
+	margin-top: 32px;
+}
+
+.category-topbar__main {
+	display: flex;
+	white-space: nowrap;
+	z-index: 11;
+}
+
+[dir] .category-topbar__main {
+	background: inherit;
+}
+
+[dir=ltr] .category-topbar__main {
+	margin-left: auto;
+	padding: 0 0 0 16px;
+}
+
+[dir=rtl] .category-topbar__main {
+	margin-right: auto;
+	padding: 0 16px 0 0;
+}
+
+[dir=ltr] .category-topbar--with-text .category-topbar__main {
+	margin-left: 0;
+}
+
+[dir=rtl] .category-topbar--with-text .category-topbar__main {
+	margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+	.category-topbar {
+		align-items: center;
+		box-sizing: content-box;
+		height: auto;
+	}
+	[dir] .category-topbar {
+		margin: 0;
+		transform: translateY(-100%);
+	}
+
+	.category-topbar__main {
+		align-items: center;
+		height: 100%;
+	}
+
+	[dir] .category-topbar__main {
+		background: inherit;
+	}
+
+	.category-topbar--with-text {
+		justify-content: center;
+	}
+
+	[dir] .category-topbar--with-text {
+		padding: 0;
+	}
+
+	[dir=ltr] .category-topbar--with-text .category-topbar__main {
+		margin-left: auto;
+	}
+
+	[dir=rtl] .category-topbar--with-text .category-topbar__main {
+		margin-right: auto;
+	}
+
+	[dir] .category-topbar__separator {
+		margin: 0 var(--spacing-04);
+	}
+}
+
+.category-topbar-related-categories {
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+}[dir=ltr] .category-topbar-related-categories {
+	margin-left: auto;
+}[dir=rtl] .category-topbar-related-categories {
+	margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.category-topbar-related-categories {
+		position: relative;
+	}
+	[dir] .category-topbar-related-categories {
+		padding: 0 24px;
+	}
+	[dir=ltr] .category-topbar-related-categories {
+		margin-left: 0;
+	}
+	[dir=rtl] .category-topbar-related-categories {
+		margin-right: 0;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.category-topbar-related-categories__categories {
+		font-size: var(--font-size-heading-xs);
+		line-height: var(--line-height-heading-xs);
+		letter-spacing: var(--letter-spacing-heading-xs);
+		text-transform: uppercase;
+		font-stretch: var(--font-stretch-condensed);
+		font-weight: var(--font-weight-light);
+	}
+
+	.category-topbar-related-categories__categories .nav-row__item--active {
+		font-size: var(--font-size-heading-xs-highlight);
+		line-height: var(--line-height-heading-xs-highlight);
+		letter-spacing: var(--letter-spacing-heading-xs-highlight);
+		text-transform: uppercase;
+		font-stretch: var(--font-stretch-condensed);
+		font-weight: var(--font-weight-condensed);
+	}
+}
+
